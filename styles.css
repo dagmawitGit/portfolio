@@ -1,0 +1,590 @@
+/* ===== RESETS ===== */
+
+:root {
+    --netflix-red: #e50914;
+    --netflix-dark: #141414;
+    --netflix-gray: #333;
+    --netflix-light-gray: #8c8c8c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: var(--netflix-dark);
+    color: white;
+    background-image: url(images/im.jpg);
+    
+    
+}
+.carousel-control-prev{
+    position: absolute;
+    object-position: left;
+    align-items: start;
+;
+}
+
+
+
+
+
+/* ===== HEADER ===== */
+.header {
+    min-height: 100vh;
+    position: relative;
+    border-bottom: 8px solid #222;
+
+    background:rgba(0, 0, 0, 0.8);
+
+
+
+}
+
+.navbar {
+    position: relative;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 100px;
+            z-index: 100;
+           
+            
+}
+
+.nav-items {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.language-selector {
+    border: 1px solid #777;
+    border-radius: 4px;
+    padding: 0.3rem 0.5rem;
+}
+
+.language-selector select {
+    background: transparent;
+    color: white;
+    border: none;
+    
+}
+
+.signin-btn {
+    background: #e50914;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+    
+}
+
+
+/* Add to your hero section CSS */
+
+.hero h1 {
+    font-weight: 800;
+    font-size: clamp(1rem, 5vw, 3.5rem);
+    margin-bottom: 1rem;
+}
+
+.hero h2 {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    font-weight: normal;
+    margin-bottom: 1.5rem;
+}
+
+.email-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.email-form input {
+    background: transparent; /* Removes white background */
+    border: 1px solid rgba(255,255,255,0.3); /* Netflix-style semi-transparent border */
+    color: white; /* Ensures text is visible */
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    width: 65%;
+    
+}
+
+/* Placeholder text color */
+.email-form input::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+.email-form button {
+    background: #e50914;
+    color: white;
+    border: none;
+    padding: 0 1.5rem;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* ===== CONTENT CARDS ===== */
+.content-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 10%;
+    border-bottom: 8px solid #222;
+}
+
+.text-content {
+    flex: 1;
+    padding: 0 3rem;
+}
+
+.text-content h2 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    margin-bottom: 1rem;
+}
+
+.text-content p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.media-content {
+    position: relative;
+    flex: 1;
+}
+
+.tv-img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.video-container {
+    position: absolute;
+    top: 20%;
+    left: 13%;
+    width: 73%;
+    height: 60%;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* ===== FAQ SECTION ===== */
+.faq {
+    padding: 3rem 10%;
+    text-align: center;
+    border-bottom: 8px solid #222;
+}
+
+.faq h2 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    margin-bottom: 2rem;
+}
+
+.faq-item {
+    margin-bottom: 0.5rem;
+    max-width: 800px;
+    margin: 0 auto 0.5rem;
+}
+
+.faq-item summary {
+    background: #303030;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    text-align: left;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+}
+
+.faq-item summary::after {
+    content: "+";
+    position: absolute;
+    right: 1.5rem;
+    font-size: 2rem;
+}
+
+.faq-item[open] summary::after {
+    content: "×";
+
+}
+.faq-item:hover{
+    background-color: #333;
+    transform: scale(1.05);
+}
+.faq-item p {
+    background: #303030;
+    padding: 1.5rem;
+    text-align: left;
+    margin-top: 1px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    padding: 3rem 10%;
+    color: #757575;
+}
+
+.footer p {
+    margin-bottom: 2rem;
+}
+.emilo{
+    display: flex;
+}
+
+/* Cards Section */
+.card-section {
+    padding: 40px 4%;
+    background:black;
+    gap: 10px;
+}
+
+.card-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    display: flex;
+    scrollbar-color: var(--netflix-red);
+}
+.N:hover{
+    transform: scale(1.2);
+  
+}
+
+.ranking {
+    position: relative;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    top: 270px;
+    color:var(--netflix-red)
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-weight: 700;
+    z-index: 2;
+    
+    
+    
+   
+  }
+  .I{
+    image-resolution:initial;
+  }
+  .ranking:hover{
+      transform: scale(2);
+  }
+
+.content-card {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.C:hover {
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+.card-image {
+    position: relative;
+    aspect-ratio: 2/3;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.play-btn {
+    background: rgba(255,255,255,0.2);
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+}
+
+.card-info {
+    padding: 12px;
+    background: #181818;
+}
+
+.card-info h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.card-meta {
+    display: flex;
+    gap: 8px;
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+    color: #d2d2d2;
+}
+
+.match {
+    color: #46d369;
+    font-weight: bold;
+}
+
+.age {
+    border: 1px solid currentColor;
+    padding: 0 4px;
+}
+
+.card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    font-size: 0.7rem;
+}
+
+.card-tags span {
+    color: #d2d2d2;
+}
+
+
+/* Benefits Section */
+.benefits-section {
+    padding: 60px 5%;
+    background: dark;
+    color: white;
+    text-align: center;
+}
+
+.benefits-section h2 {
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 40px;
+    color:white;
+}
+
+.benefits-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 100px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.benefit-card {
+    height: 400px;
+    background:blueviolet;
+     border-radius: 8px;
+    padding: 30px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-bottom: 3px solid #e50914;
+}
+.benefit-card:hover{
+    background: rgb(46, 46, 168);
+    -o-transform: scale(1.05);
+    
+}
+.form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+
+}
+  .language-selector select {
+    padding: 0.8rem 2rem 0.8rem 1rem;
+    background-position: right 1rem center ;
+  }
+
+.footer-section {
+    padding: 70px 0;
+    margin-top: -50px;
+  }
+
+  .footer-section a {
+    transition: color 0.3s ease;
+    color:white !important;
+    text-decoration: underline !important;
+  }
+
+  .footer-section a:hover {
+    color: #fff !important;
+    text-decoration: underline !important;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 16px;
+  }
+
+
+
+.benefit-icon {
+    font-size: 2.5rem;
+    color: #e50914;
+    margin-bottom: 20px;
+}
+
+.benefit-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.benefit-card p {
+    color: #d2d2d2;
+    line-height: 1.6;
+}
+.final-input{
+    text-align: center;
+    padding-top: 35px;
+}
+.emailo2{
+    display: flex;
+    margin-left: 150px;
+   
+
+}
+.firstb{
+    width: 300px;
+}
+.I{
+    position: absolute;
+    width: 80px;
+    height: 90px;
+
+}
+.I:hover{
+    transform: scale(1.05);
+}
+.footer-links{
+
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    max-width: 1300px;
+    margin: 0 auto;
+
+}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .benefits-container {
+     gap: 30px;
+    }
+    .list-unstyled{
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .benefits-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .benefit-card {
+        padding: 20px 15px;
+    }
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .me{
+        padding-bottom: 80px;
+    }
+    .me h2{
+        padding: bottom 100px;
+        top:400px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .content-card {
+        flex-direction: column;
+        text-align: center;
+
+    }
+    
+
+    .text-content {
+
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+
+    .media-content {
+        width: 100%;
+    }
+
+    .email-form {
+        flex-direction: column;
+        display: grid;
+    }
+
+    .email-form input {
+        min-width: auto;
+        width: 100%;
+        
+
+    }
+}
