@@ -1,0 +1,110 @@
+
+.slider-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100vw;
+  padding: 10px;
+
+}
+
+.slide-i {
+  flex: 0 0 auto;
+  width: 300px;
+  height: 250px;
+  margin-right: 10px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.hover-button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: rgb(204, 123, 123);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+}
+.image-container:hover .hover-button {
+  opacity: 1;
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+  width:400px;
+  height:250px;
+  overflow:hidden
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hover-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  background-color: rgba(0, 123, 255, 0.8);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .hover-button {
+  opacity: 1;
+}
+.a{
+  background-image:url(p1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.b{
+  background-image:url(p2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.c{
+  background-image:url(p3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.d{
+  background-image:url(p4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.e{
+  background-image:url(p5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.f{
+  background-image:url(p6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

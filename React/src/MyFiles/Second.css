@@ -1,0 +1,131 @@
+.d{
+    display:flex;
+    column-gap: 50px;
+    padding-left:80px;
+    padding-right:50px;
+    list-style: none;
+    height: 30px;
+    border: '2px solid white';
+  background-color: aquamarine;
+}
+.I{
+    width:30px;
+    height:30px;
+    margin-bottom: 100px;
+    
+}
+.first{
+    padding-bottom: 50px;
+}
+.ulIcon{
+    list-style: none;
+}
+.Toggle{
+    visibility: hidden;
+}
+.right{
+    gap:45px;
+}
+.menu-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger {
+  
+  
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  border-radius: 2px;
+  
+}
+
+/* Animation when open */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.menu-list {
+  margin-top: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.menu-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list li {
+  padding: 8px 0;
+  cursor: pointer;
+  row-gap: 50px;
+}
+
+
+@media(max-width:864px){
+        .nav-bar-collapse{
+            display:none !important;
+
+        }
+        nav-collapse.show{
+            display:block !important;
+        }
+        
+        .I{
+            justify-content: left;
+            
+        }
+        .Toggle{
+            visibility: visible;
+            margin-bottom: 50px;
+        }
+        .menu-list{
+            background-color: white;
+        
+        }
+        .right{
+             padding-left: 500px;
+             gap:10px;
+        }
+      
+        .app{
+          padding-top: 7px;
+        }
+        .d{
+            padding-left: 20px;
+            padding-right: 0px;
+        }
+
+        
+        
+    }
+    @media (max-width:768px) {
+      .right{
+     padding-left: 400px;
+      } 
+    }
+    
+  
+    @media (max-width:600px) {
+      .right{
+        padding-left: 300px;
+      }
+    }

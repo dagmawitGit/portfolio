@@ -1,0 +1,37 @@
+/* .my{
+    background-image: url(./5.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 1200px;
+    height: 1000px;
+    
+    
+
+} */
+ .B2{
+    background-image: url(phone1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+ }
+
+.j{
+    text-align: center;
+}
+
+
+
+
+/* Alignment container */
+.j{
+    text-align: center;
+}
+@media (max-width:768) {
+.B2{
+    background-image:url(./phone2.jpg);
+    background-size: cover;
+    background-position:center ;
+}
+    
+ }   

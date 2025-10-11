@@ -1,0 +1,16 @@
+.C{
+background-color:rgb(229, 238, 238);
+padding-top: 50px;
+font-size: 12px;
+padding-left: 80px;
+padding-right: 80px;
+padding-left: 150px;
+padding-right: 150px;
+}
+@media (max-width:846px) {
+    .C{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+}
