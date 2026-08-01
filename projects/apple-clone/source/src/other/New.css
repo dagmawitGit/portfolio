@@ -1,0 +1,93 @@
+.slider-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100vw;
+  padding: 10px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE / old Edge */
+}
+
+.slider-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, new Edge */
+}
+
+.slide-image {
+  flex: 0 0 auto;
+  width: 800px;
+  height: 400px;
+  margin-right: 10px;
+  border-radius: 10px;
+  
+  object-fit: cover;
+}
+.one{
+background-image: url(./f1.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.two{
+background-image: url(./f2.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.three{
+background-image: url(./f3.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.four{
+background-image: url(./f4.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.five{
+background-image: url(./f5.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.six{
+background-image: url(./f6.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.seven{
+background-image: url(./f7.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.eight{
+background-image: url(./f8.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.nine{
+background-image: url(./f9.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.ten{
+background-image: url(./f10.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+

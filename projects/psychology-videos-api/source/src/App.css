@@ -1,0 +1,74 @@
+body {
+  background: linear-gradient(180deg, #eef1fb 0%, #f7f8fa 320px);
+}
+
+.Big {
+  padding-top: 1rem;
+}
+
+.Big h1 {
+  font-weight: 800;
+  background: linear-gradient(90deg, #2b2f77, #4a6cf7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.5px;
+}
+
+/* Cards: same structure as before, just richer visual treatment */
+.video-card {
+  border: 1px solid #eef0f5;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.28s ease, border-color 0.28s ease;
+  opacity: 0;
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.video-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 32px rgba(74, 108, 247, 0.18);
+  border-color: rgba(74, 108, 247, 0.35);
+}
+
+.video-card .card-img-top {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.video-card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.video-card .card-title {
+  font-weight: 700;
+  color: #1f2440;
+}
+
+.video-card .card-text {
+  color: #5b5f77;
+}
+
+.video-card .text-muted small {
+  font-weight: 500;
+}
+
+.video-card .btn-primary {
+  background: linear-gradient(90deg, #4a6cf7, #6f8bff);
+  border: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.video-card .btn-primary:hover {
+  filter: brightness(1.08);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(74, 108, 247, 0.35);
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "id": "fcc-open-source-llms",
+    "title": "How to Run Open Source LLMs Locally and in the Cloud",
+    "description": "A hands-on course on downloading, running, and deploying open source large language models on your own machine and in the cloud.",
+    "thumbnail": "https://cdn.hashnode.com/uploads/covers/5f68e7df6dfc523d0a894e7c/5e964c21-8ba1-4c64-8dee-be757e52cac6.jpg",
+    "channel": "freeCodeCamp.org",
+    "publishedAt": "2026-07-30",
+    "url": "https://www.freecodecamp.org/news/how-to-run-open-source-llms-locally-and-in-the-cloud/"
+  },
+  {
+    "id": "fcc-js-event-loop",
+    "title": "Mastering the JavaScript Event Loop",
+    "description": "A deep dive into how JavaScript handles asynchronous code, covering the call stack, callback queue, microtasks, and the event loop itself.",
+    "thumbnail": "https://cdn.hashnode.com/uploads/covers/5f68e7df6dfc523d0a894e7c/0f6a748e-4b2e-4fd8-9592-d6ab4eb83dd3.jpg",
+    "channel": "freeCodeCamp.org",
+    "publishedAt": "2026-07-28",
+    "url": "https://www.freecodecamp.org/news/mastering-the-javascript-event-loop/"
+  },
+  {
+    "id": "fcc-hardware-cloud-devops",
+    "title": "Learn Hardware, Cloud, DevOps, Networking, Security, Databases, DNS, Git, and Linux",
+    "description": "A broad computer science fundamentals course covering the systems and infrastructure knowledge every developer needs.",
+    "thumbnail": "https://cdn.hashnode.com/uploads/covers/5f68e7df6dfc523d0a894e7c/831525ec-8ec5-4428-afd2-e91641684c6c.png",
+    "channel": "freeCodeCamp.org",
+    "publishedAt": "2026-07-22",
+    "url": "https://www.freecodecamp.org/news/learn-hardware-cloud-devops-networking-security-databases-dns-git-and-linux/"
+  },
+  {
+    "id": "fcc-stanford-hackathon-doc",
+    "title": "Inside Stanford's Elite Student Hackathon [Full Documentary]",
+    "description": "A behind-the-scenes documentary following student teams building projects at one of the top university hackathons.",
+    "thumbnail": "https://cdn.hashnode.com/uploads/covers/5f68e7df6dfc523d0a894e7c/58a0cf1c-4e7a-4424-ac33-2e71235c8111.jpg",
+    "channel": "freeCodeCamp.org",
+    "publishedAt": "2026-07-22",
+    "url": "https://www.freecodecamp.org/news/inside-stanford-elite-student-hackathon-full-documentary/"
+  },
+  {
+    "id": "fcc-gemini-cli",
+    "title": "Agentic Coding with the Gemini CLI",
+    "description": "A practical course on using Google's Gemini CLI to automate coding tasks with an AI agent from the command line.",
+    "thumbnail": "https://cdn.hashnode.com/uploads/covers/5f68e7df6dfc523d0a894e7c/4fbf4599-630f-4778-979c-8c499bc5ee65.png",
+    "channel": "freeCodeCamp.org",
+    "publishedAt": "2026-07-17",
+    "url": "https://www.freecodecamp.org/news/agentic-coding-with-the-gemini-cli/"
+  },
+  {
+    "id": "fcc-blender-threejs",
+    "title": "3D Web Development with Blender and Three.js",
+    "description": "Learn to model 3D assets in Blender and bring them into the browser using the Three.js JavaScript library.",
+    "thumbnail": "https://cdn.hashnode.com/uploads/covers/5f68e7df6dfc523d0a894e7c/2b3acf85-fe97-49cc-b45f-e361cff56037.jpg",
+    "channel": "freeCodeCamp.org",
+    "publishedAt": "2026-07-15",
+    "url": "https://www.freecodecamp.org/news/3d-web-development-with-blender-and-three-js/"
+  },
+  {
+    "id": "fcc-zapier-automation",
+    "title": "Reclaim Your Time – Master Automation with Zapier",
+    "description": "A course on building no-code automations with Zapier to connect apps and eliminate repetitive manual work.",
+    "thumbnail": "https://cdn.hashnode.com/uploads/covers/5f68e7df6dfc523d0a894e7c/80b2d07a-dc5c-4b73-a50c-5c4b5c462a74.jpg",
+    "channel": "freeCodeCamp.org",
+    "publishedAt": "2026-07-14",
+    "url": "https://www.freecodecamp.org/news/reclaim-your-time-master-automation-with-zapier/"
+  },
+  {
+    "id": "fcc-openai-codex",
+    "title": "OpenAI Codex Essentials – AI Assisted Agentic Development Course",
+    "description": "An introduction to using OpenAI's Codex for agentic, AI-assisted software development workflows.",
+    "thumbnail": "https://cdn.hashnode.com/uploads/covers/5f68e7df6dfc523d0a894e7c/92e29c83-93ca-4efe-a416-abea5a48cfcb.jpg",
+    "channel": "freeCodeCamp.org",
+    "publishedAt": "2026-07-09",
+    "url": "https://www.freecodecamp.org/news/openai-codex-essentials-ai-assisted-agentic-development-course/"
+  },
+  {
+    "id": "fcc-system-design",
+    "title": "Learn Software System Design",
+    "description": "A core computer science course on designing scalable software systems, covering key architecture patterns and trade-offs.",
+    "thumbnail": "https://cdn.hashnode.com/uploads/covers/5f68e7df6dfc523d0a894e7c/faae70fb-e5b6-45b4-b02d-abdce412781d.jpg",
+    "channel": "freeCodeCamp.org",
+    "publishedAt": "2026-07-09",
+    "url": "https://www.freecodecamp.org/news/learn-software-system-design/"
+  },
+  {
+    "id": "fcc-cs-ai-hype-podcast",
+    "title": "How to Learn Programming and CS in the AI Hype Era [Podcast #215]",
+    "description": "An interview about how the rise of AI coding tools is changing the way students should approach learning computer science.",
+    "thumbnail": "https://cdn.hashnode.com/uploads/covers/5f68e7df6dfc523d0a894e7c/2df53936-94fb-4061-bf6c-86d6b8293b75.jpg",
+    "channel": "freeCodeCamp.org",
+    "publishedAt": "2026-07-01",
+    "url": "https://www.freecodecamp.org/news/how-to-learn-programming-and-cs-in-the-ai-hype-era-interview-with-dev-and-prof-mark-mahoney-podcast-215/"
+  },
+  {
+    "id": "fcc-cuda-h100",
+    "title": "CUDA Programming for NVIDIA H100s",
+    "description": "A course on GPU programming with CUDA, covering parallel computing fundamentals on modern NVIDIA hardware.",
+    "thumbnail": "https://cdn.hashnode.com/uploads/covers/5f68e7df6dfc523d0a894e7c/ea6ca08d-00f6-43c6-88b1-536d7319982f.jpg",
+    "channel": "freeCodeCamp.org",
+    "publishedAt": "2026-06-28",
+    "url": "https://www.freecodecamp.org/news/cuda-programming-for-nvidia-h100s/"
+  },
+  {
+    "id": "fcc-ai-drone-programming",
+    "title": "Master AI Drone Programming",
+    "description": "A Python course on programming autonomous drones, combining robotics fundamentals with basic AI-driven flight control.",
+    "thumbnail": "https://cdn.hashnode.com/uploads/covers/5f68e7df6dfc523d0a894e7c/f85499ab-1fad-4f9c-b1d8-ab3a4cecfb6c.png",
+    "channel": "freeCodeCamp.org",
+    "publishedAt": "2026-06-25",
+    "url": "https://www.freecodecamp.org/news/master-ai-drone-programming/"
+  }
+]

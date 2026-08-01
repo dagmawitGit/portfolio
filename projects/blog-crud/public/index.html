@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Node CRUD Example</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-uppercase" href="#">CRUD App</a>
+        <div>
+          <button class="btn btn-outline-light mx-2" id="userSectionBtn"><i class="bi bi-people"></i> Users</button>
+          <button class="btn btn-outline-light mx-2" id="postSectionBtn"><i class="bi bi-file-earmark-post"></i> Posts</button>
+          <button class="btn btn-outline-light mx-2" id="commentSectionBtn"><i class="bi bi-chat-dots"></i> Comments</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- USER SECTION -->
+    <div class="container py-4 d-none" id="userSection">
+      <div class="card glass-card p-4">
+        <h2 class="text-center mb-4"><i class="bi bi-people-fill"></i> User Management</h2>
+        <div class="mb-3 text-center">
+          <button class="btn btn-success mx-2" id="addUserBtn">Add</button>
+          <button class="btn btn-primary mx-2" id="viewUserBtn">View</button>
+          <button class="btn btn-warning mx-2" id="updateUserBtn">Update</button>
+          <button class="btn btn-danger mx-2" id="deleteUserBtn">Delete</button>
+        </div>
+
+        <!-- Add User -->
+        <div id="addUserForm" class="d-none">
+          <h3>Add User</h3>
+          <form id="addUserFormSubmit">
+            <input type="text" id="username" placeholder="Username" class="form-control mb-2" />
+            <input type="email" id="email" placeholder="Email" class="form-control mb-2" />
+            <input type="password" id="password" placeholder="Password" class="form-control mb-2" />
+            <input type="submit" value="Save" class="btn btn-primary" />
+          </form>
+        </div>
+
+        <!-- View Users -->
+        <div id="viewUserTable" class="d-none">
+          <h3>User List</h3>
+          <table class="table table-dark table-hover text-center rounded">
+            <thead>
+              <tr><th>ID</th><th>Name</th><th>Email</th></tr>
+            </thead>
+            <tbody id="userTableBody"></tbody>
+          </table>
+        </div>
+
+        <!-- Update User -->
+        <div id="updateUserForm" class="d-none">
+          <h3>Update User</h3>
+          <form id="updateUserFormSubmit">
+            <input type="text" id="updateUserId" placeholder="User ID" class="form-control mb-2" />
+            <input type="text" id="updateUsername" placeholder="Username" class="form-control mb-2" />
+            <input type="email" id="updateUserEmail" placeholder="Email" class="form-control mb-2" />
+            <input type="password" id="updateUserPassword" placeholder="Password" class="form-control mb-2" />
+            <input type="submit" value="Update" class="btn btn-warning" />
+          </form>
+        </div>
+
+        <!-- Delete User -->
+        <div id="deleteUserForm" class="d-none">
+          <h3>Delete User</h3>
+          <form id="deleteUserFormSubmit">
+            <input type="text" id="deleteUserId" placeholder="User ID" class="form-control mb-2" />
+            <input type="submit" value="Delete" class="btn btn-danger" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- POST SECTION -->
+    <div class="container py-4 d-none" id="postSection">
+      <div class="card glass-card p-4">
+        <h2 class="text-center mb-4"><i class="bi bi-file-earmark-post"></i> Post Management</h2>
+        <div class="mb-3 text-center">
+          <button class="btn btn-success mx-2" id="addPostBtn">Add</button>
+          <button class="btn btn-primary mx-2" id="viewPostBtn">View</button>
+          <button class="btn btn-warning mx-2" id="updatePostBtn">Update</button>
+          <button class="btn btn-danger mx-2" id="deletePostBtn">Delete</button>
+        </div>
+
+        <!-- Add Post -->
+        <div id="addPostForm" class="d-none">
+          <h3>Add Post</h3>
+          <form id="addPostFormSubmit">
+            <textarea id="post_content" placeholder="Content" class="form-control mb-2"></textarea>
+            <input type="text" id="postUserId" placeholder="User ID" class="form-control mb-2" />
+            <input type="submit" value="Save" class="btn btn-primary" />
+          </form>
+        </div>
+
+        <!-- View Posts -->
+        <div id="viewPostTable" class="d-none">
+          <h3>Post List</h3>
+          <table class="table table-dark table-hover text-center rounded">
+            <thead>
+              <tr><th>ID</th><th>Content</th><th>User</th><th>Date</th></tr>
+            </thead>
+            <tbody id="postTableBody"></tbody>
+          </table>
+        </div>
+
+        <!-- Update Post -->
+        <div id="updatePostForm" class="d-none">
+          <h3>Update Post</h3>
+          <form id="updatePostFormSubmit">
+            <input type="text" id="updatePostId" placeholder="Post ID" class="form-control mb-2" />
+            <textarea id="updatePostContent" placeholder="Content" class="form-control mb-2"></textarea>
+            <input type="submit" value="Update" class="btn btn-warning" />
+          </form>
+        </div>
+
+        <!-- Delete Post -->
+        <div id="deletePostForm" class="d-none">
+          <h3>Delete Post</h3>
+          <form id="deletePostFormSubmit">
+            <input type="text" id="deletePostId" placeholder="Post ID" class="form-control mb-2" />
+            <input type="submit" value="Delete" class="btn btn-danger" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMMENT SECTION -->
+    <div class="container py-4 d-none" id="commentSection">
+      <div class="card glass-card p-4">
+        <h2 class="text-center mb-4"><i class="bi bi-chat-dots"></i> Comment Management</h2>
+        <div class="mb-3 text-center">
+          <button class="btn btn-success mx-2" id="addCommentBtn">Add</button>
+          <button class="btn btn-primary mx-2" id="viewCommentBtn">View</button>
+          <button class="btn btn-warning mx-2" id="updateCommentBtn">Update</button>
+          <button class="btn btn-danger mx-2" id="deleteCommentBtn">Delete</button>
+        </div>
+
+        <!-- Add Comment -->
+        <div id="addCommentForm" class="d-none">
+          <h3>Add Comment</h3>
+          <form id="addCommentFormSubmit">
+            <textarea id="comment_content" placeholder="Content" class="form-control mb-2"></textarea>
+            <input type="text" id="commentUserId" placeholder="User ID" class="form-control mb-2" />
+            <input type="text" id="commentPostId" placeholder="Post ID" class="form-control mb-2" />
+            <input type="submit" value="Save" class="btn btn-primary" />
+          </form>
+        </div>
+
+        <!-- View Comments -->
+        <div id="viewCommentTable" class="d-none">
+          <h3>Comment List</h3>
+          <table class="table table-dark table-hover text-center rounded">
+            <thead>
+              <tr><th>ID</th><th>Content</th><th>User</th><th>Post</th><th>Date</th></tr>
+            </thead>
+            <tbody id="commentTableBody"></tbody>
+          </table>
+        </div>
+
+        <!-- Update Comment -->
+        <div id="updateCommentForm" class="d-none">
+          <h3>Update Comment</h3>
+          <form id="updateCommentFormSubmit">
+            <input type="text" id="updateCommentId" placeholder="Comment ID" class="form-control mb-2" />
+            <textarea id="updateCommentContent" placeholder="Content" class="form-control mb-2"></textarea>
+            <input type="submit" value="Update" class="btn btn-warning" />
+          </form>
+        </div>
+
+        <!-- Delete Comment -->
+        <div id="deleteCommentForm" class="d-none">
+          <h3>Delete Comment</h3>
+          <form id="deleteCommentFormSubmit">
+            <input type="text" id="deleteCommentId" placeholder="Comment ID" class="form-control mb-2" />
+            <input type="submit" value="Delete" class="btn btn-danger" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="jQuery.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

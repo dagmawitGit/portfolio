@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
+    
+    <!-- Bootstrap CSS (Local) -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with Netflix Logo -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo">
+                    <img class="net" src="images/images.png" alt="Netflix">
+                </div>
+                <div class="nav-items">
+                    <button class="btn signin-btn">Sign In</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1 class="hero-title">Unlimited movies, TV shows, and more</h1>
+            <h2 class="hero-subtitle">Watch anywhere. Cancel anytime.</h2>
+            <p class="hero-description">Ready to watch? Enter your email to create or restart your membership.</p>
+            <form class="email-form">
+                <input type="email" class="email-input" placeholder="Email address" required>
+                <button type="submit" class="get-started-btn">
+                    Get Started <span class="chevron">›</span>
+                </button>
+            </form>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Trending Now Section -->
+        <section class="trending-section">
+            <h2 class="section-title">Trending Now</h2>
+            <div class="trending-wrapper">
+                <button class="scroll-arrow scroll-arrow-left" aria-label="Scroll left">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                    </svg>
+                </button>
+                <div class="trending-container">
+                <div class="trending-card">
+                    <div class="card-image-wrapper">
+                        <span class="ranking-badge">1</span>
+                        <img src="images/venom.jpg" alt="Venom" class="card-image">
+                        <div class="card-overlay">
+                            <button class="play-button" aria-label="Play Venom">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="card-title">Venom</p>
+                </div>
+
+                <div class="trending-card">
+                    <div class="card-image-wrapper">
+                        <span class="ranking-badge">2</span>
+                        <img src="images/black.jpg" alt="Black Beauty" class="card-image">
+                        <div class="card-overlay">
+                            <button class="play-button" aria-label="Play Black Beauty">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="card-title">Black Beauty</p>
+                </div>
+
+                <div class="trending-card">
+                    <div class="card-image-wrapper">
+                        <span class="ranking-badge">3</span>
+                        <img src="images/friends.jpg" alt="Friends" class="card-image">
+                        <div class="card-overlay">
+                            <button class="play-button" aria-label="Play Friends">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="card-title">Friends</p>
+                </div>
+
+                <div class="trending-card">
+                    <div class="card-image-wrapper">
+                        <span class="ranking-badge">4</span>
+                        <img src="images/transform.jpg" alt="Transformers" class="card-image">
+                        <div class="card-overlay">
+                            <button class="play-button" aria-label="Play Transformers">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="card-title">Transformers</p>
+                </div>
+
+                <div class="trending-card">
+                    <div class="card-image-wrapper">
+                        <span class="ranking-badge">5</span>
+                        <img src="images/hero.jpg" alt="Weak Hero" class="card-image">
+                        <div class="card-overlay">
+                            <button class="play-button" aria-label="Play Weak Hero">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="card-title">Weak Hero</p>
+                </div>
+
+                <div class="trending-card">
+                    <div class="card-image-wrapper">
+                        <span class="ranking-badge">6</span>
+                        <img src="images/women.jpg" alt="The Woman King" class="card-image">
+                        <div class="card-overlay">
+                            <button class="play-button" aria-label="Play The Woman King">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="card-title">The Woman King</p>
+                </div>
+                </div>
+                <button class="scroll-arrow  scroll-arrow-right" aria-label="Scroll right">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="benefits-section">
+            <h2 class="section-title">More reasons to join</h2>
+            <div class="benefits-container">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                    </div>
+                    <h3>Enjoy on your TV</h3>
+                    <p>Watch on Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+                    <img src="images/logo.png" alt="TV" class="benefit-image">
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                    </div>
+                    <h3>Download your shows to watch offline</h3>
+                    <p>Save your favorites easily and always have something to watch.</p>
+                    <img src="images/arrow.jpg" alt="Download" class="benefit-image">
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                    </div>
+                    <h3>Watch everywhere</h3>
+                    <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+                    <img src="images/cele.jpg" alt="Watch everywhere" class="benefit-image">
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        
+                    </div>
+                    <h3>Create profiles for kids</h3>
+                    <p>Send kids on adventures with their favorite characters in a space made just for them — free with your membership.</p>
+                    <img src="images/smile.jpg" alt="Kids profile" class="benefit-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is Netflix?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.<br><br>
+                        You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How much does Netflix cost?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from USD 2.99 to USD 9.99 a month. No extra costs, no contracts.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Where can I watch?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.<br><br>
+                        You can also download your favorite shows with the iOS or Android app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do I cancel?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What can I watch on Netflix?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is Netflix good for kids?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.<br><br>
+                        Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don't want kids to see.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Email Section -->
+        <section class="final-email-section">
+            <p class="final-email-text">Ready to watch? Enter your email to create or restart your membership.</p>
+            <form class="email-form">
+                <input type="email" class="email-input" placeholder="Email address" required>
+                <button type="submit" class="get-started-btn">
+                    Get Started <span class="chevron">›</span>
+                </button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-question">Questions? <a href="#" class="footer-link">Contact us</a></p>
+            <div class="footer-links-grid">
+                <div class="footer-column">
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">FAQ</a></li>
+                        <li><a href="#" class="footer-link">Investor Relations</a></li>
+                        <li><a href="#" class="footer-link">Privacy</a></li>
+                        <li><a href="#" class="footer-link">Speed Test</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Help Center</a></li>
+                        <li><a href="#" class="footer-link">Jobs</a></li>
+                        <li><a href="#" class="footer-link">Cookie Preferences</a></li>
+                        <li><a href="#" class="footer-link">Legal Notices</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Account</a></li>
+                        <li><a href="#" class="footer-link">Ways to Watch</a></li>
+                        <li><a href="#" class="footer-link">Corporate Information</a></li>
+                        <li><a href="#" class="footer-link">Only on Netflix</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Media Center</a></li>
+                        <li><a href="#" class="footer-link">Terms of Use</a></li>
+                        <li><a href="#" class="footer-link">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="language-selector">
+                <select class="language-select">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                </select>
+            </div>
+            <p class="footer-country">Netflix Ethiopia</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (Local) -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

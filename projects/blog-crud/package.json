@@ -1,0 +1,20 @@
+{
+  "name": "blog-crud",
+  "version": "1.0.0",
+  "description": "Blog CRUD app (Node.js, Express, MySQL, jQuery, Bootstrap) with cloud-database support",
+  "main": "server/app.js",
+  "scripts": {
+    "start": "node --env-file=.env server/app.js",
+    "start:legacy-node": "node server/app.js"
+  },
+  "engines": {
+    "node": ">=20.6.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mysql2": "^3.9.3"
+  }
+}

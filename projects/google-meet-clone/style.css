@@ -1,0 +1,279 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    background-color:  #f8f9fa;
+    border-bottom: 1px solid  #f8f9fa;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 24px;
+    height: auto;
+    margin-right: 10px;
+  }
+
+  .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    font-size: 14px;
+}
+
+
+.icons-group {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Smaller gap between first three icons */
+}
+
+/* Space between .icons-group and .icons-right */
+.icons-group::after {
+    content: "";
+    display: block;
+    width: 25px; /* Creates a little extra gap between the two icon groups */
+}
+
+/* Last two icons (Google Apps, Google Account) */
+.icons-right {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Normal gap between Google Apps and Account */
+}
+
+/* General icon styling */
+.icons-group span,
+.icons-right span {
+    display: inline-flex;/*Ensures Proper Spacing*/
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.icons-group span:hover,
+.icons-right span:hover {
+    transform: scale(1.2);
+}
+
+/* Google Account Icon */
+.user-info {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  body {
+    background-color: #f8f9fa;
+    color: #202124;
+    line-height: 1.5;/*improves readability*/
+  }
+  
+
+  main {
+    max-width: 80vw; /*Allows Flexibility*/
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  p {
+    font-size: 16px;
+    margin: 10px 0 20px;
+    color: #5f6368;
+    
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Space between elements */
+    border-bottom: 1px solid  #b6b6b6;
+    padding: 30px 50px;
+}
+
+.new-meeting {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+   
+}
+
+.new-meeting:hover {
+    background-color: #0056b3;
+}
+
+.new-meeting img {
+    width: 25px;
+    height: 25px;
+}
+
+.join-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1; /* Takes remaining space */
+    
+}
+
+.join-container input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.join-btn {
+    background-color: #e8f0fe;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #1a73e8;
+}
+
+  hr {
+    margin: 30px 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+  }
+  .illustration img {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px 0;
+  }
+  footer {
+    text-align: left;
+    margin-top: 40px;/*More Breathing Room*/
+  }
+  footer a {
+    color: #1a73e8;
+    text-decoration: none;
+  }
+
+  /* FLEX CONTAINER for Desktop */
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .text-section{
+    max-width: 500px;
+    text-align: left;
+  },
+  .illustration {
+    flex: 1;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width:480px){
+    .header-container{
+      padding: 5px 10px;
+    }
+  }
+  .top-bar{
+    gap:8px
+  }
+  .icons-group span img,
+  .icons-right span img{
+    width: 16px
+    height: 16px
+  }
+  .icons-group{
+    gap: 5px;
+  }
+  .icons-right{
+    gap: 6px
+  }
+  .user-info{
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+  }
+  .top-bar span{
+    font-size: 12px;
+  }
+  
+  @media (min-width: 768px) {
+    .icons {
+      margin-left: 20px;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
+    }
+    main {
+      max-width: 1500px;
+
+      padding: 30px;
+    }
+    h1 {
+      font-size: 32px;
+    }
+    p {
+      font-size: 18px;
+    }
+    .content-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 100px;
+     
+    }
+    .text-section {
+      max-width: 500%;
+      text-align: left;
+    }
+   .illustration {
+      max-width: 50%;
+      
+    }
+    .illustration img {
+      max-width: 50%;
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 15px; /* Space between elements */
+      border-bottom: 1px solid  #b6b6b6;
+      padding: 30px 50px;
+    
+      
+  }
+  
+  
+  }

@@ -1,0 +1,156 @@
+/* Base */
+.navbar {
+  background-color: #f4f7f5;
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+  font-size: small;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar *{
+  box-sizing: border-box;
+}
+
+.desktop-menu {
+  display: none;
+}
+
+.menu-list {
+  
+  gap: 1.5rem;
+  list-style: none;
+  
+}
+
+.menu-list li {
+  cursor: pointer;
+  font-size: 12px;
+
+}
+.main{
+  padding-left: 150px;
+  padding-right: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+
+.menu-list:hover{
+  text-decoration: underline;
+}
+.menulist{
+  list-style: none;
+
+}
+
+
+/* Mobile Menu */
+.mobile-menu {
+  width: 100%;
+}
+
+.mobile-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  width: 100%;
+}
+
+.mobile-section-block {
+  border-top: 1px solid #eee;
+  padding-top: 0.5rem;
+  width: 100%;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size:medium;
+  width: 100%;
+  padding: 0.5rem 0;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.arrow {
+  flex: 0 0 auto;
+  font-size: 1rem;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.arrow-open {
+  transform: rotate(180deg);
+}
+
+.section-items-wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+  overflow: hidden;
+}
+
+.section-items-wrapper.open {
+  grid-template-rows: 1fr;
+}
+
+.section-items-wrapper > .section-items {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.section-items {
+  list-style: none;
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+.section-items:hover{
+  text-decoration: underline;
+}
+.fakelink{
+  text-decoration: underline;
+  color:blue;
+}
+
+
+
+@media (min-width: 768px) {
+  .desktop-menu {
+    display: block;
+    width: 100%;
+  }
+  .mobile-menu {
+    display: none;
+    width: 100%;
+  }
+
+
+  .navbar-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main{
+    padding-left: 30px;
+  }
+  .continer.gap-5{
+    gap: 1.5rem !important;
+    flex-wrap: wrap;
+  }
+}

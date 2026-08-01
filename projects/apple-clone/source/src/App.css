@@ -1,0 +1,17 @@
+/* .body{
+  margin-bottom: 500px;
+padding-bottom: 500px;  
+} */
+
+/* Prevent horizontal scrolling on the whole page (vertical scroll only) */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* The nav bar is position:fixed, so it no longer reserves its own space
+   in the page flow. Push the page content down by the nav's height (44px)
+   so nothing gets hidden underneath it. */
+.App-header {
+  padding-top: 44px;
+}
